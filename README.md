@@ -78,9 +78,9 @@ Next we Tuned the trading algorithm by adjusting the SMA input features to set t
    macro avg       0.50      0.50      0.46      3952
 weighted avg       0.51      0.47      0.45      3952
 
-THis resulted in  drop in Accuracy to 0.47 from 0.55. This change in the SMA windows shows better outpiu=uts for the Negative Returns vs, the Positive Returns.
+This resulted in  drop in Accuracy to 0.47 from 0.55. This change in the SMA windows shows better outputs for the Negative Returns vs, the Positive Returns.
 
-A third iteration of the model using SHort =5 periods &  Long = 90 periods resulted in the following:
+A third iteration of the model using Short =5 periods &  Long = 90 periods resulted in the following:
          precision    recall  f1-score   support
 
         -1.0       0.44      0.86      0.58      1589
@@ -91,6 +91,8 @@ A third iteration of the model using SHort =5 periods &  Long = 90 periods resul
 weighted avg       0.52      0.46      0.39      3655
 
 This seemed to result in a small reduction in the quality of the accuracy scores to the original & previous iterations but a better separation betweenn the Actual vs. Strategy Returns. 
+![image](https://user-images.githubusercontent.com/85462153/134846001-11a1aa6f-ad26-4f59-8ae3-cef4cb905d5f.png)
+
 
 
 Finally the Logistic regression model was run based offthe original dataset & the results showed a improved precision & reduced accuracy as previously discussed:
@@ -103,3 +105,6 @@ Finally the Logistic regression model was run based offthe original dataset & th
     accuracy                           0.47      3548
    macro avg       0.52      0.51      0.42      3548
 weighted avg       0.53      0.47      0.40      3548
+
+
+![image](https://user-images.githubusercontent.com/85462153/134846075-9a34bd2a-9e5e-489a-a71a-c70155eac4f8.png)
